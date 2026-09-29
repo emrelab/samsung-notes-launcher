@@ -32,7 +32,7 @@ This repository is the scaffolding half of a workaround: before touching any dev
 identity you must first reliably answer *"is Samsung Notes installed on this machine, and
 what is its exact package identity?"*. That is what `samsung-launcher.bat` does today.
 
-## ⚙️ What the script actually does
+## 🔧 What the script actually does
 
 | Step | Implementation | Where it lives in the script |
 |---|---|---|
@@ -57,7 +57,7 @@ described in older revisions of this README are not part of the code in this rep
 | Privileges | Administrator (the script self-elevates; accept the UAC prompt) |
 | Dependencies | None — Batch and the PowerShell already present in Windows |
 
-## 🛠️ Usage
+## 🚀 Usage
 
 1. Download **[`samsung-launcher.bat`](samsung-launcher.bat)** (right-click → *Save link as…*).
 2. Double-click it, or right-click → **Run as administrator**.
@@ -89,7 +89,7 @@ Lütfen Microsoft Store'dan Samsung Notes uygulamasını yükleyin.
 | `powershell` not recognized / blocked by policy | PowerShell removed or locked down by group policy on a managed machine | Use the package name from `Get-AppxPackage` manually; the script cannot run without PowerShell |
 | The `%temp%` dump file is stale | The script overwrites it on every run | Delete `%temp%\samsung_details.txt` and re-run |
 
-## 🗺️ Roadmap
+## 🧭 Roadmap
 
 - [x] Self-elevation with a clear UAC flow
 - [x] Locate the Samsung Notes package and expose its full / family name
@@ -102,7 +102,7 @@ Lütfen Microsoft Store'dan Samsung Notes uygulamasını yükleyin.
 Contributions towards the unchecked items are welcome — please open an issue first so the
 approach to the device-identity step can be agreed before code lands.
 
-## ⚠️ Disclaimer
+## 🚨 Disclaimer
 
 - **Unofficial.** Not affiliated with, endorsed by, or supported by Samsung or Microsoft.
 - The current script makes no persistent change to your system. Any future release that
